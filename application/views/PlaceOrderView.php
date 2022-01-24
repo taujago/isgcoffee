@@ -99,6 +99,9 @@
 
 
         $("#btn-tambah").click(function() {
+            // set jumlah =  1 
+            $("#jumlah").val('1');
+            $("#keterangan").val('');
             $("#modaltambah").modal('show');
         });
 

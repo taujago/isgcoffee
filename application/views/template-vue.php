@@ -128,74 +128,11 @@
             <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
 
 
-                <li class="<?php echo ($this->controller == "Homepage") ? "active" : ""; ?> nav-item"><a class="d-flex align-items-center" href="<?php echo site_url("Homepage"); ?>"><i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Email">DASHBOARD</span></a>
+                <li class="<?php echo ($this->controller == "Homepage") ? "active" : ""; ?> nav-item"><a class="d-flex align-items-center" href="<?php echo site_url("Homepage"); ?>"><i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Email">PEMESANAN</span></a>
                 </li>
-
-                <!-- 
-                <li class="<?php echo ($this->controller == "MenuPenduduk") ? "active" : ""; ?> nav-item"><a class="d-flex align-items-center" href="<?php echo site_url("MenuPenduduk"); ?>"><i data-feather="users"></i><span class="menu-title text-truncate" data-i18n="Kanban">Kependudukan</span></a>
-                </li> -->
-
-
-                <li class="nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="edit"></i><span class="menu-title text-truncate" data-i18n="User">Kependudukan</span></a>
-                    <ul class="menu-content">
-                        <li class="<?php echo ($this->menu == "MenuPenduduk/kk") ? "active" : ""; ?>"><a class="d-flex align-items-center" href="<?php echo site_url("MenuPenduduk/index/kk/KARTU KELUARGA"); ?>"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="List">Kartu Keluarga</span></a>
-                        </li>
-                        <li class="<?php echo ($this->menu == "MenuPenduduk/ktp") ? "active" : ""; ?>"><a class="d-flex align-items-center" href="<?php echo site_url("MenuPenduduk/index/ktp/KARTU TANDA PENDUDUK"); ?>"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="View">KTP</span></a>
-                        </li>
-                        <li class="<?php echo ($this->menu == "MenuPenduduk/kia") ? "active" : ""; ?>"><a class="d-flex align-items-center" href="<?php echo site_url("MenuPenduduk/index/kia/KARTU IDENTITAS ANAK"); ?>"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="View">KIA</span></a>
-                        </li>
-                        <li class="<?php echo ($this->menu == "MenuPenduduk/pindah") ? "active" : ""; ?>"><a class="d-flex align-items-center" href="<?php echo site_url("MenuPenduduk/index/pindah/KEPINDAHAN"); ?>"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Edit">Kepindahan</span></a>
-                        </li>
-                        <li class="<?php echo ($this->menu == "MenuPenduduk/datang") ? "active" : ""; ?>"><a class="d-flex align-items-center" href="<?php echo site_url("MenuPenduduk/index/datang/KEDATANGAN"); ?>"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Edit">Kedatangan</span></a>
-                        </li>
-                        <li class="<?php echo ($this->menu == "MenuPenduduk/wna") ? "active" : ""; ?>"><a class="d-flex align-items-center" href="<?php echo site_url("MenuPenduduk/index/wna/SURAT KETERANGAN TEMPAT TINGGAL"); ?>"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Edit">Orang Asing (WNA) </span></a>
-                        </li>
-                    </ul>
-                </li>
-
-
-
-
-                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="edit"></i><span class="menu-title text-truncate" data-i18n="User">Catatan Sipil</span></a>
-                    <ul class="menu-content">
-                        <li class="<?php echo ($this->menu == "MenuPenduduk/lahir") ? "active" : ""; ?>"><a class="d-flex align-items-center" href="<?php echo site_url("MenuPenduduk/index/lahir/AKTA KELAHIRAN"); ?>"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="List">Akta Kelahiran</span></a>
-                        </li>
-                        <li class="<?php echo ($this->menu == "MenuPenduduk/mati") ? "active" : ""; ?>"><a class="d-flex align-items-center" href="<?php echo site_url("MenuPenduduk/index/mati/AKTA KEMATIAN"); ?>"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="View">Akta Kematian</span></a>
-                        </li>
-                        <li class="<?php echo ($this->menu == "MenuPenduduk/kawin") ? "active" : ""; ?>"><a class="d-flex align-items-center" href="<?php echo site_url("MenuPenduduk/index/kawin/KARTU IDENTITAS ANAK"); ?>"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="View">Akta Perkawinan</span></a>
-                        </li>
-                        <li class="<?php echo ($this->menu == "MenuPenduduk/cerai") ? "active" : ""; ?>"><a class="d-flex align-items-center" href="<?php echo site_url("MenuPenduduk/index/cerai/KEPINDAHAN"); ?>"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Edit">Akta Perceraian</span></a>
-                        </li>
-
-                    </ul>
-                </li>
-
-
-
-                <li class="<?php echo ($this->menu == "MenuPenduduk/ag") ? "active" : ""; ?> nav-item"><a class="d-flex align-items-center" href="<?php echo site_url("MenuPenduduk/index/ag/DATA AGGREGAT"); ?>"><i data-feather="edit"></i><span class="menu-title text-truncate" data-i18n="Kanban">Data Agregat</span></a>
-                </li>
-                <!-- <li class="<?php echo ($this->controller == "MenuPenduduk/swga") ? "active" : ""; ?> nav-item"><a class="d-flex align-items-center" href="<?php echo site_url("MenuPenduduk/index/swga/DATA AGGREGAT"); ?>"><i data-feather="edit"></i><span class="menu-title text-truncate" data-i18n="Kanban">Data Agregat 2 x</span></a>
-                </li> -->
-
-
-                <!-- <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="user"></i><span class="menu-title text-truncate" data-i18n="User">User</span></a>
-                    <ul class="menu-content">
-                        <li><a class="d-flex align-items-center" href="app-user-list.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="List">List</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="app-user-view.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="View">View</span></a>
-                        </li>
-                        <li><a class="d-flex align-items-center" href="app-user-edit.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Edit">Edit</span></a>
-                        </li>
-                    </ul>
-                </li> -->
-                <?php if ($userdata['username'] == "admin") : ?>
-                    <li class="<?php echo ($this->controller == "Settings") ? "active" : ""; ?> nav-item"><a class="d-flex align-items-center" href="<?php echo site_url("Settings"); ?>"><i data-feather="edit"></i><span class="menu-title text-truncate" data-i18n="Kanban">Setting</span></a>
-                    </li>
-
-                <?php endif; ?>
-                <li class="<?php echo ($this->controller == "Gantipasss") ? "active" : ""; ?> nav-item"><a class="d-flex align-items-center" href="<?php echo site_url("Gantipasss"); ?>"><i data-feather='key'></i><span class="menu-title text-truncate" data-i18n="Kanban">Ganti Password</span></a>
-                </li>
-                <li class="<?php echo ($this->controller == "Settings") ? "active" : ""; ?> nav-item"><a class="d-flex align-items-center" href="<?php echo site_url("Login/logout"); ?>"><i data-feather='log-out'></i> <span class="menu-title text-truncate" data-i18n="Kanban">Logout</span></a>
+ 
+                
+                <li class="<?php echo ($this->controller == "Settings") ? "active" : ""; ?> nav-item"><a class="d-flex align-items-center" href="<?php echo site_url("Login/logout"); ?>"><i data-feather='log-out'></i> <span class="menu-title text-truncate" data-i18n="Kanban">LOGOUT</span></a>
                 </li>
 
             </ul>
