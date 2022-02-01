@@ -130,6 +130,8 @@
 
                 <li class="<?php echo ($this->controller == "Homepage") ? "active" : ""; ?> nav-item"><a class="d-flex align-items-center" href="<?php echo site_url("Homepage"); ?>"><i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Email">PEMESANAN</span></a>
                 </li>
+                <li class="<?php echo ($this->controller == "Laporan") ? "active" : ""; ?> nav-item"><a class="d-flex align-items-center" href="<?php echo site_url("Laporan"); ?>"><i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Email">Laporan</span></a>
+                </li>
  
                 
                 <li class="<?php echo ($this->controller == "Settings") ? "active" : ""; ?> nav-item"><a class="d-flex align-items-center" href="<?php echo site_url("Login/logout"); ?>"><i data-feather='log-out'></i> <span class="menu-title text-truncate" data-i18n="Kanban">LOGOUT</span></a>

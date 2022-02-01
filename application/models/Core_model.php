@@ -2,10 +2,14 @@
 class Core_model extends CI_Model {
 
 var $arr_jenis;
+var $arr_bulan; 
 function __construct(){
         $this->arr_jenis = array(
                 1=>"SSH","HSPK","ASB","SBU"
         );
+
+        $this->arr_bulan = array(1=>"JANUARI","FEBRUARI","MARET","APRIL","MEI","JUNI","JULI",
+        "AGUSTUS","SEPTEMBER","OKTOBER","NOVEMBER","DESEMBRER");
 }
 
 function arr_dropdown($vTable, $vINDEX, $vVALUE, $vORDERBY){
